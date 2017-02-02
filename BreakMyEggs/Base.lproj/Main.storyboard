@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Miltown.ttf">
+            <string>Miltown</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BreakMyEggs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="viR-XY-45H" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i9m-IP-ryQ">
+                                <rect key="frame" x="246" y="156" width="175" height="139"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdD-bM-urP">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="65"/>
+                                        <color key="backgroundColor" red="1" green="0.97510474920000001" blue="0.3905553222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="hDt-1z-BNq"/>
+                                            <constraint firstAttribute="width" constant="175" id="zI3-tE-sUp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Miltown" family="Miltown" pointSize="31"/>
+                                        <state key="normal" title="PLAY">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="nGO-TA-Qac" kind="show" id="fGG-RI-Ve7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6z-42-en8">
+                                        <rect key="frame" x="0.0" y="85" width="175" height="54"/>
+                                        <color key="backgroundColor" red="1" green="0.97510474920000001" blue="0.3905553222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="VJH-rd-nCP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Miltown" family="Miltown" pointSize="17"/>
+                                        <state key="normal" title="LEADERBOARD">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="ihJ-xN-Fx2" userLabel="titolo">
+                                <rect key="frame" x="203" y="28" width="261" height="91"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titolo" translatesAutoresizingMaskIntoConstraints="NO" id="4lT-qH-a0t">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="55"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sottotitolo" translatesAutoresizingMaskIntoConstraints="NO" id="k0u-bO-LVE">
+                                        <rect key="frame" x="0.0" y="36" width="261" height="55"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vultaggio" translatesAutoresizingMaskIntoConstraints="NO" id="eOU-E4-I7T">
+                                <rect key="frame" x="20" y="315" width="222" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="59x-4q-2g5"/>
+                                    <constraint firstAttribute="width" constant="222" id="wMu-Pt-E4Z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cipriani" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-XR-67M">
+                                <rect key="frame" x="442" y="315" width="205" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="28j-75-78d"/>
+                                    <constraint firstAttribute="height" constant="40" id="dU2-nj-HF7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="e1m-XR-67M" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2eF-fD-u8i"/>
+                            <constraint firstItem="i9m-IP-ryQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDY-Tx-vuc"/>
+                            <constraint firstItem="ihJ-xN-Fx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTi-1f-XFF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e1m-XR-67M" secondAttribute="bottom" constant="20" id="PIB-hr-VHZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eOU-E4-I7T" secondAttribute="bottom" constant="20" id="V2k-oi-N12"/>
+                            <constraint firstItem="eOU-E4-I7T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nZg-TL-EF6"/>
+                            <constraint firstItem="ihJ-xN-Fx2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qfZ-m8-gSX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i9m-IP-ryQ" secondAttribute="bottom" constant="80" id="uEo-9V-HDk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yHK-YV-JUs"/>
+                    <connections>
+                        <outlet property="leaderboardBtn" destination="P6z-42-en8" id="ylZ-UD-Vfg"/>
+                        <outlet property="mainTitleLbl" destination="4lT-qH-a0t" id="7Cd-Or-OOe"/>
+                        <outlet property="playBtn" destination="GdD-bM-urP" id="ZoC-5Q-hFE"/>
+                        <outlet property="subtitleLbl" destination="k0u-bO-LVE" id="9mj-ke-0JX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291.90404797601201" y="-605.60000000000002"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="hfU-7a-Rbm">
+            <objects>
+                <viewController id="nGO-TA-Qac" customClass="GameViewController" customModule="BreakMyEggs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NYV-3M-9KD"/>
+                        <viewControllerLayoutGuide type="bottom" id="xjE-vR-6l8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K3M-8J-7Ff">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBf-uE-DQ9" userLabel="GameField">
+                                <rect key="frame" x="0.0" y="70" width="667" height="305"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="IgA-LF-Lf9">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="305"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac_happy" translatesAutoresizingMaskIntoConstraints="NO" id="0N3-Bi-MHy">
+                                        <rect key="frame" x="35" y="104" width="77" height="97"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="77" id="UrA-bW-XFn"/>
+                                            <constraint firstAttribute="height" constant="97" id="vvu-Ot-Vth"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameover" translatesAutoresizingMaskIntoConstraints="NO" id="VTj-Ws-oUD">
+                                        <rect key="frame" x="112" y="102" width="444" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VTj-Ws-oUD" secondAttribute="height" multiplier="209:47" id="7q6-HK-VJT"/>
+                                            <constraint firstAttribute="height" constant="100" id="A1W-Il-cy9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="ArZ-HM-qN8" userLabel="RestartBackToMain">
+                                        <rect key="frame" x="169" y="180" width="330" height="60"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW4-fI-RwR" userLabel="Restart">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="Max-rh-GfU"/>
+                                                </constraints>
+                                                <state key="normal" image="refresh"/>
+                                                <connections>
+                                                    <action selector="restartGame:" destination="nGO-TA-Qac" eventType="touchUpInside" id="cQO-14-tJH"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8T-aA-PyJ" userLabel="BackToMain">
+                                                <rect key="frame" x="96" y="0.0" width="234" height="60"/>
+                                                <state key="normal" image="main">
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mainPressed:" destination="nGO-TA-Qac" eventType="touchUpInside" id="4N7-Py-Vw6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="bKf-ZB-y1G"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.064186977822382252" blue="0.046117665698852006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VTj-Ws-oUD" firstAttribute="centerY" secondItem="rBf-uE-DQ9" secondAttribute="centerY" id="FJ5-IJ-Xka"/>
+                                    <constraint firstItem="ArZ-HM-qN8" firstAttribute="centerX" secondItem="VTj-Ws-oUD" secondAttribute="centerX" id="MuC-CT-kP8"/>
+                                    <constraint firstItem="VTj-Ws-oUD" firstAttribute="centerX" secondItem="rBf-uE-DQ9" secondAttribute="centerX" id="Pns-zO-zt5"/>
+                                    <constraint firstItem="0N3-Bi-MHy" firstAttribute="leading" secondItem="rBf-uE-DQ9" secondAttribute="leading" constant="35" id="QwA-8u-lzo"/>
+                                    <constraint firstItem="0N3-Bi-MHy" firstAttribute="centerY" secondItem="rBf-uE-DQ9" secondAttribute="centerY" id="WBz-v7-Vnu"/>
+                                    <constraint firstAttribute="trailing" secondItem="IgA-LF-Lf9" secondAttribute="trailing" id="ecx-An-pre"/>
+                                    <constraint firstAttribute="bottom" secondItem="IgA-LF-Lf9" secondAttribute="bottom" id="mTP-Qg-51o"/>
+                                    <constraint firstItem="IgA-LF-Lf9" firstAttribute="top" secondItem="rBf-uE-DQ9" secondAttribute="top" id="pWj-Ee-OMw"/>
+                                    <constraint firstAttribute="bottom" secondItem="ArZ-HM-qN8" secondAttribute="bottom" constant="65" id="ujw-oP-7nd"/>
+                                    <constraint firstItem="IgA-LF-Lf9" firstAttribute="leading" secondItem="rBf-uE-DQ9" secondAttribute="leading" id="yBO-vN-RS9"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Q8x-OF-tZ0" userLabel="Points Stack">
+                                <rect key="frame" x="20" y="35" width="272.5" height="27"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="O9i-t5-hyp" userLabel="Points">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="POINTS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFZ-PD-Sh3">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="16"/>
+                                                <fontDescription key="fontDescription" name="Miltown" family="Miltown" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR7-gM-DZA" userLabel="0">
+                                                <rect key="frame" x="89.5" y="0.0" width="38" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="Ygv-ob-lil"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Miltown" family="Miltown" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-8a-fPs" userLabel="Best Score Stack">
+                                        <rect key="frame" x="0.0" y="16" width="84.5" height="11"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" text="BEST SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cM3-Sr-Xcn" userLabel="Best Score">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="11"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="gik-bi-S1N"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Miltown" family="Miltown" pointSize="8"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo8-uL-TkP" userLabel="0">
+                                                <rect key="frame" x="79" y="0.0" width="5.5" height="11"/>
+                                                <fontDescription key="fontDescription" name="Miltown" family="Miltown" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="O9i-t5-hyp" secondAttribute="trailing" constant="145" id="8Fv-Cf-pkO"/>
+                                    <constraint firstAttribute="trailing" secondItem="HdM-8a-fPs" secondAttribute="trailing" constant="188" id="Csl-rt-Oap"/>
+                                    <constraint firstItem="HdM-8a-fPs" firstAttribute="top" secondItem="Q8x-OF-tZ0" secondAttribute="top" constant="16" id="brm-da-bUh"/>
+                                    <constraint firstAttribute="bottom" secondItem="O9i-t5-hyp" secondAttribute="bottom" constant="11" id="tcd-xA-C5L"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVEL 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="PWR-ry-T4K">
+                                <rect key="frame" x="553.5" y="27" width="93.5" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="yF1-At-gJQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Miltown" family="Miltown" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97510474920000001" blue="0.3905553222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rBf-uE-DQ9" firstAttribute="leading" secondItem="K3M-8J-7Ff" secondAttribute="leading" id="0MT-3r-YOL"/>
+                            <constraint firstItem="Q8x-OF-tZ0" firstAttribute="top" secondItem="NYV-3M-9KD" secondAttribute="bottom" constant="15" id="1C5-Nd-HLe"/>
+                            <constraint firstItem="xjE-vR-6l8" firstAttribute="top" secondItem="rBf-uE-DQ9" secondAttribute="bottom" id="2vv-mE-rjn"/>
+                            <constraint firstItem="Q8x-OF-tZ0" firstAttribute="leading" secondItem="K3M-8J-7Ff" secondAttribute="leadingMargin" id="RGr-Wt-e47"/>
+                            <constraint firstItem="rBf-uE-DQ9" firstAttribute="top" secondItem="PWR-ry-T4K" secondAttribute="bottom" id="VhW-by-bdm"/>
+                            <constraint firstItem="PWR-ry-T4K" firstAttribute="trailing" secondItem="K3M-8J-7Ff" secondAttribute="trailingMargin" id="kBZ-ju-QE6"/>
+                            <constraint firstAttribute="trailing" secondItem="rBf-uE-DQ9" secondAttribute="trailing" id="rui-qZ-G7W"/>
+                            <constraint firstItem="PWR-ry-T4K" firstAttribute="centerY" secondItem="Q8x-OF-tZ0" secondAttribute="centerY" id="urr-Vn-Gjj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImg" destination="IgA-LF-Lf9" id="3iE-xG-Yv5"/>
+                        <outlet property="bestOf" destination="vo8-uL-TkP" id="iS5-wz-hpe"/>
+                        <outlet property="bestScoreLbl" destination="cM3-Sr-Xcn" id="4d6-ms-NQM"/>
+                        <outlet property="currentLevel" destination="PWR-ry-T4K" id="4Fe-A3-EOk"/>
+                        <outlet property="currentPoints" destination="SR7-gM-DZA" id="5le-Kt-0h4"/>
+                        <outlet property="gameFieldView" destination="rBf-uE-DQ9" id="Cx6-pc-bNf"/>
+                        <outlet property="gameOverImg" destination="VTj-Ws-oUD" id="V6W-x2-1nv"/>
+                        <outlet property="iMacImg" destination="0N3-Bi-MHy" id="EeI-NM-0BH"/>
+                        <outlet property="mainBtn" destination="a8T-aA-PyJ" id="3Gm-mY-6HD"/>
+                        <outlet property="pointsLbl" destination="RFZ-PD-Sh3" id="pnj-nB-VxF"/>
+                        <outlet property="restartGameBtn" destination="RW4-fI-RwR" id="BiR-Jj-Hfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPe-lM-I8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275.1124437781111" y="-607.20000000000005"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="667" height="305"/>
+        <image name="Cipriani" width="529" height="111"/>
+        <image name="Vultaggio" width="654" height="111"/>
+        <image name="gameover" width="209" height="47"/>
+        <image name="mac_happy" width="136" height="169"/>
+        <image name="main" width="234" height="52"/>
+        <image name="refresh" width="152" height="153"/>
+        <image name="sottotitolo" width="261" height="45"/>
+        <image name="titolo" width="257" height="55"/>
+    </resources>
+</document>
