@@ -14,5 +14,5 @@ This demo app was born after a programming task (called *nano challenge*) during
 In the second phase of the challenge we were asked to change the rules blending the game into something different and that's how the idea of **Hit-da-Vairus** came out. I talked with my friend and collegue **Fabio Cipriani** and *we had this idea of an iMac which is threathened by the viruses and you have to hit them in time* (IE: before they reach the Mac). The game is divided in waves of viruses which are more in number and faster batch after batch.
 
 
-
+## 
 **Copyright (c) 2017 Andrea Vultaggio under MIT License.**
